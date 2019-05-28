@@ -94,11 +94,11 @@ try:
             # print("huffman codes: ", huffmanCodes)
             # print("bitarray codewords: ", huffmanBitarrayCodes)
 
-            # print(" Char |  Freq  |      Huffman code     ")
-            # print("---------------------------------------")
-            # for char, frequency in frequencyMapCopy:
-            #     print(" %-4r | %6d | %22s" % (char, frequency, huffmanCodes[char]))
-            # print()
+            print(" Char |  Freq  |      Huffman code     ")
+            print("---------------------------------------")
+            for char, frequency in frequencyMapCopy:
+                print(" %-4r | %6d | %22s" % (char, frequency, huffmanCodes[char]))
+            print()
 
         output = encode(file_contents, huffmanBitarrayCodes)
 
